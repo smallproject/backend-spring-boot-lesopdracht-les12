@@ -17,4 +17,36 @@ public class TeacherDto {
 
     @Past
     public LocalDate dob;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public @NotBlank String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(@NotBlank String firstName) {
+        this.firstName = firstName;
+    }
+
+    public @Size(min = 3, max = 255) String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(@Size(min = 3, max = 255) String lastName) {
+        this.lastName = lastName;
+    }
+
+    public @Past LocalDate getDob() {
+        return dob;
+    }
+
+    public void setDob(@Past LocalDate dob) {
+        this.dob = dob;
+    }
 }
